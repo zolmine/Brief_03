@@ -41,7 +41,7 @@
 
                 <div class="carb">
                     <label>Carburant :</label>
-                    <select name="" id="carb" onchange="get_veh()" class="form-control" >
+                    <select name="" id="carb"  class="form-control" >
                         <option value="" >Select type :</option>
                     </select>
                 </div>
@@ -64,6 +64,7 @@
     <button onclick="calc()">Valide</button>
     
     </div>
+    <input type="text" id="inp" value="">
 </section>
     
    
@@ -80,21 +81,21 @@
                         arr=["Essence","Electrique"];
                         arr_01=["NaN"];
                         prx=[0.14,0.05];
-                        prx_01 = [1];
+                        prx_01 = [0];
                         car_price = [10];
                     break;
                     case "Citadine":
                         arr=["Essence","Electrique","Diesel","Hybride"];
                         arr_01=["Manuelle"];
                         prx=[0.14,0.05,0.21,0.09];
-                        prx_01=[1];
+                        prx_01=[0];
                         car_price = [12];
                     break;
                     case "Compact":
                         arr=["Essence","Diesel","Hybride"];
                         arr_01=["Manuelle"];
                         prx=[0.14,0.21,0.09];
-                        prx_01=[1];
+                        prx_01=[0];
                         car_price = [14];
                     break;
                     case "Berline":
@@ -108,14 +109,14 @@
                         arr=["Diesel"];
                         arr_01=["Manuelle"];
                         prx=[0.21];
-                        prx_01=[1];
+                        prx_01=[0];
                         car_price = [16];
                     break;
                     case "Engin de Chantier":
                         arr=["Essence","Diesel"];
                         arr_01=["Manuelle"];
                         prx=[0.14,0.21];
-                        prx_01=[1];
+                        prx_01=[0];
                         car_price = [900];
                     break;
                     case "Camion":
@@ -159,14 +160,20 @@
     }
 
     function calc(){
-        var days_nbr    = document.getElementById("nbr").value;
-        var veh_prx     = document.getElementById("car_price").value;
-        var carburant   = document.getElementById("carb").value;
-        var boit        = document.getElementById("boit").value;
-        var carburant_per_day = (carburant*veh_prx);
-        var boit_per_day      = boit*veh_prx;
-        var total = (carburant_per_day + boit_per_day + veh_prx)*days_nbr; 
-        alert(total);
+         var days_nbr    = document.getElementById("nbr").value;
+         var veh_prx     = document.getElementById("car_price").value;
+         let carburant   = document.getElementById("carb").value;
+         let boit        = document.getElementById("boit").value;
+         var carburant_per_day = 0;
+         var boit_per_day = 0;
+         var total = 0;
+     
+        
+         carburant_per_day = parseFloat(carburant) * parseFloat(veh_prx);
+         boit_per_day      = (parseFloat(boit)* parseFloat(veh_prx));
+         total             = (carburant_per_day + boit_per_day + parseFloat(veh_prx))*days_nbr; 
+        document.getElementById("inp").value = total;
+        
     }
 
 </script>
