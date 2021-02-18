@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car rental</title>
+  <meta name="description" content="Rent cars online">
+  <meta name="keywords" content="cars, rent, online">
+  <meta name="author" content="Amine Es Sobhi">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reserve.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <img src="images/faical_sonic.png" alt="gocar logo">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a class="reserve_btn" href="reserve.html" class="active">Reservation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="reserve">
+
+    <div class="inner-reserve container">
+      <h2>Reserve Now</h2>
+
+      <h3>Select Type Of Vehicle</h3>
+      <div class="transmission carb">
+        <select name="car" id="car" onchange="get_veh()">
+          <option>Select Type :</option>
+          <option>Moto</option>
+          <option>Citadine</option>
+          <option>Compact</option>
+          <option>Berline</option>
+          <option>Utilitaire</option>
+          <option>Engin de Chantier</option>
+          <option>Camion</option>
+        </select>
+        <div class="form_00-00 cont1">
+
+          <input type="text" placeholder="Full Name..." class="form-control">
+        </div>
+      </div>
+
+      <h3>Transmission</h3>
+      <div class="transmission carb">
+
+        <select name="" id="carb" class="form-control">
+          <option value="">Select type :</option>
+        </select>
+        <div class="form_00-00 cont2">
+
+          <input type="text" placeholder="CIN..." class="form-control">
+        </div>
+      </div>
+      <h3>Fuel</h3>
+      <div class="transmission carb">
+
+        <select name="" id="boit" class="form-control">
+          <option value="">Select type :</option>
+        </select>
+        <div class="form_00-00 cont2">
+
+          <input type="text" placeholder="Email..." class="form-control">
+        </div>
+        <input id="car_price" value="" type="hidden">
+      </div>
+      <div class="form_00-04">
+
+
+        <h3>Durée de Réservation </h3>
+        <label for="">From :</label><input type="date" name="" id="start" class="form-control first_one">
+        <label for="">To :</label><input type="date" name="" id="end" class="form-control scond_one" onchange="days()">
+        <label for="">Nombre de jour :</label><input type="text" value="" size="2" name="" id="nbr" class="form-control"
+          readonly>
+
+
+        <button onclick="calc()">Submit</button>
+        <div class="total">
+          <h3>Total :</h3> <input value="" type="text" readonly id="inp" size="2">
+        </div>
+      </div>
+
+      <div id="modal" style="display: none">
+        <div id="modal--content">
+          <div id="close">&times;</div>
+          <p id="price"></p>$
+        </div>
+      </div>
+  </section>
+
+  <script src="js/reserve.js"></script>
+  <footer class="container">
+
+    <p>All Rights Reserveed - lorem 2020</p>
+
+  </footer>
+</body>
+
+</html>

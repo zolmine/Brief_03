@@ -1,0 +1,196 @@
+section.reserve {
+  padding: 160px 0;
+  text-align: center;
+}
+
+section.reserve h2 {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+section.reserve p {
+  font-weight: 200;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  color: #fff;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  opacity: 0.4;
+}
+
+section.reserve .inner-reserve {
+  padding: 10px 68px;
+  background: linear-gradient(2deg, #646464e6, #fcba038c), url(../images/back.jpg);
+  background-color: rgba(25, 43, 33, 0.678);
+  border-radius: 70px;
+  text-align: left;
+  border-radius: 30px;
+  width: 60%;
+
+  background-repeat: no-repeat;
+}
+
+section.reserve .inner-reserve h3 {
+  color: white;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  margin-top: 0.7rem;
+}
+
+section.reserve .inner-reserve select {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background: #fff0;
+  outline: none;
+  border-radius: 30px;
+  width: 156px;
+}
+
+section.reserve .inner-reserve select option {
+  color: #000000;
+}
+
+
+section.reserve .inner-reserve .transmission {
+  color: white;
+  display: flex;
+}
+
+section.reserve .inner-reserve .boit {
+  color: white;
+  display: flex;
+}
+
+section.reserve .inner-reserve button:hover {
+  opacity: 0.9;
+}
+
+section.reserve .inner-reserve .total h3 {
+  text-align: right;
+}
+
+.total input {
+  margin-left: 94%;
+  width: 5%;
+}
+
+.form_00-04 input {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background: #fff0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.form_00-04 button {
+  color: #0a043c;
+  padding: 10px 45px;
+  border-radius: 30px;
+  font-weight: 600;
+  background: white;
+  border: 1px solid #fff;
+  outline: none;
+  margin-left: 4%;
+  margin-top: 2%;
+  cursor: pointer;
+  
+}
+
+.form_00-04 label {
+  color: #fff;
+  font-size: 15px;
+  margin: 1%;
+}
+
+.form_00-00 input {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid white;
+  background: #fff0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.cont1 {
+  margin-left: 58%;
+}
+
+.cont2 {
+  margin-left: 58%;
+}
+
+.form_00-00 label {
+  color: #fff;
+  font-size: 15px;
+  display: inline;
+}
+
+::placeholder {
+  color: white;
+}
+
+#modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+
+#modal--content {
+  /* color: black; */
+  opacity: 1;
+  border-radius: 10px;
+  width: 50vw;
+  height: auto;
+  background: #fcba03a8;
+  padding: 0;
+  margin: 0;
+}
+
+#modal--content * {
+  padding: 0;
+  margin: 0;
+}
+
+#modal--content #close {
+  color: black;
+  opacity: 1;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  /* width: 100%; */
+  padding: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0 0;
+}
+
+#modal--content p {
+  color: black;
+  opacity: 1;
+  padding: 2rem;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+}

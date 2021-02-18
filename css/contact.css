@@ -1,0 +1,234 @@
+section.reserve {
+    padding: 260px 0;
+    text-align: center;
+}
+
+section.reserve h2 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+section.reserve p {
+    font-weight: 200;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    opacity: 0.4;
+}
+
+section.reserve .inner-reserve {
+    padding: 10px 68px;
+    background: linear-gradient(2deg, #646464e6, #fcba038c), url(../images/back.jpg);
+    background-color: rgba(25, 43, 33, 0.678);
+    border-radius: 70px;
+    text-align: left;
+    border-radius: 30px;
+    width: 40%;
+
+    background-repeat: no-repeat;
+}
+
+section.reserve .inner-reserve h3 {
+    color: white;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+section.reserve .inner-reserve select {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: #fff0;
+    outline: none;
+    border-radius: 30px;
+    width: 13%;
+}
+
+section.reserve .inner-reserve select option {
+    color: #757706;
+}
+
+section.reserve .inner-reserve .transmission {
+    color: white;
+    display: flex;
+}
+
+section.reserve .inner-reserve .boit {
+    color: white;
+    display: flex;
+}
+
+section.reserve .inner-reserve button:hover {
+    opacity: 0.9;
+}
+
+section.reserve .inner-reserve .total h3 {
+    text-align: right;
+}
+
+.total input {
+    margin-left: 94%;
+    width: 5%;
+}
+
+.form_00-04 input {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: #fff0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.form_00-04 button {
+    color: #0a043c;
+    padding: 10px 45px;
+    border-radius: 30px;
+    font-weight: 600;
+    background: white;
+    border: 1px solid #fff;
+    outline: none;
+    margin-left: 45%;
+    cursor: pointer;
+}
+
+.form_00-04 label {
+    color: #fff;
+    font-size: 15px;
+    margin: 1%;
+}
+
+.form_00-00 input {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: #fff0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.cont1 {
+    margin-left: 32%;
+    padding: 2%;
+}
+
+.cont2 {
+    margin-left: 34%;
+    padding-bottom: 2%;
+}
+
+.form_00-00 label {
+    color: #fff;
+    font-size: 15px;
+    display: inline;
+}
+
+.form_00-00 textarea {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: #fff0;
+    outline: none;
+    border-radius: 30px;
+}
+
+::placeholder {
+    color: white;
+}
+
+#modal {
+    
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+   
+  }
+  
+  #modal--content {
+    /* color: black; */
+    opacity: 1;
+    border-radius: 10px;
+    width: 35vw;
+    height: auto;
+    background: #fcba03a8;
+    padding-bottom: 2%;
+    margin: 0;
+  }
+  
+  #modal--content * {
+    padding: 0;
+    margin-left: 10%;
+  }
+  
+  #modal--content #close {
+    color: black;
+    opacity: 1;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    /* width: 100%; */
+    padding: 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0;
+  }
+  
+  #modal--content p {
+    color: black;
+    opacity: 1;
+    padding: 2rem;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #modal input{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 31%;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: #fff0;
+    outline: none;
+    border-radius: 30px;
+  }
+  #modal h1{
+      padding: 2%;
+      color: white;
+  }
+  #modal textarea{
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: #fff0;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 31%;
+
+  }
