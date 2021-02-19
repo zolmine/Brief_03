@@ -261,6 +261,9 @@ section.about2 div:first-child {
 
 section.about div img,
 section.about2 div img {
+  height: 100%;
+    width: 100%;
+    object-fit: cover;
   max-width: 100%;
 }
 
@@ -305,7 +308,9 @@ section.adv h2 {
 
 section.adv .icon-container {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
 }
 
 section.adv .icon-container>div {
@@ -470,4 +475,216 @@ footer p {
   text-align: center;
   opacity: 0.7;
   margin-bottom: 30px;
+}
+header nav .ham {
+  display: none;
+  position: fixed;
+  top: 40px;
+  right: 80px;
+  z-index: 100;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  /* right: 0; */
+  background-image: url("../images/menu.svg");
+  background-size: 100%;
+}
+
+header nav .showClose {
+  background-image: url("../images/close.svg");
+}
+
+header nav .ham_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+   transform: translateY(-100%);
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav .showNav {
+  transform: translateY(0);
+}
+
+header nav .showClose {
+  background-image: url("../images/close.svg");
+}
+
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  section.adv .icon-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  section.adv .icon-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .header .navbar > ul {
+    display: none;
+  }
+  header nav .ham {
+    right: 60px;
+    display: block;
+    outline: none;
+  }
+  .header .navbar ul li {
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.1;
+    margin-bottom: 20px;
+  }
+  .ham_menu {
+    font-size: 1.5rem;
+    padding-top: 90px;
+  }
+  .gallery-container :nth-child(1) {
+    grid-column: 1 / span3;
+  }
+  .gallery-container :nth-child(2) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+  .container {
+    max-width: 320px;
+  }
+  section.about {
+    margin-bottom: 20px;
+  }
+  section.about .container a {
+    display: inline;
+  }
+  section.about2 {
+    padding-bottom: 50px;
+  }
+  section.adv .icon-container {
+        grid-template-columns: 1fr;
+  }
+  .header .navbar > ul {
+    display: none;
+  }
+  header nav .ham {
+    right: 40px;
+    display: block;
+    outline: none;
+  }
+  .header .navbar ul li {
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.1;
+    margin-bottom: 20px;
+  }
+  .ham_menu {
+    font-size: 1.5rem;
+    padding-top: 90px;
+  }
+  section.hero {
+    padding-left: 30px;
+  }
+  section.adv {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  section.about,
+  section.about2 {
+  flex-direction: column;
+  }
+  section.about div.container,
+  section.about2 div.container {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  section.about div.container p,
+  section.about2 div.container p {
+    width: 100%;
+  }
+  section.about2 div.container {
+    margin-bottom: 40px;
+  }
+  .prgrph000 {
+    margin-top: 40px;
+  }
+  .prgrph001 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  section.about div:first-child,
+  section.about2 div:first-child {
+    margin-right: 0;
+    height: 50%;
+    width: 100%;
+  }
+  section.about div,
+  section.about2 div {
+    width: 100%;
+  }
+  section.about .container {
+    margin-left: 20px;
+    /* margin: 30px; */
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .gallery-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .gallery-container :nth-child(1) {
+    grid-column: unset;
+  }
+  .gallery-container :nth-child(2) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+  footer .footer-inner {
+    display: none;
+  }
+  footer p {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  section.adv .icon-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .header .navbar > ul {
+    display: none;
+  }
+  header nav .ham {
+    right: 40px;
+    display: block;
+    outline: none;
+  }
+  .header .navbar ul li {
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.1;
+    margin-bottom: 20px;
+  }
 }

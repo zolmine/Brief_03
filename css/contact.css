@@ -232,3 +232,16 @@ section.reserve .inner-reserve .total h3 {
     margin-left: 31%;
 
   }
+  @media only screen and (min-width: 280px) and (max-width: 599px) {
+    .cont2 ,.cont1{
+        margin-left: 0;
+    }
+    section.reserve .inner-reserve {
+        text-align: center;
+        padding: 40px 10px;
+        width: 100%;
+    }
+    section.reserve .inner-reserve .transmission {
+        justify-content: center;
+    }
+  }

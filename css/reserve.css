@@ -194,3 +194,22 @@ section.reserve .inner-reserve .total h3 {
   text-align: center;
   margin: 0 auto;
 }
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+  .cont2 ,.cont1{
+    margin-left: 0;
+}
+  section.reserve .inner-reserve .transmission {
+    
+      flex-direction: column;
+  }
+  .transmission.carb {
+    margin-bottom: 10px;
+  }
+  .form_00-04 input {
+    
+    margin-bottom: 10px;
+  }
+  .form_00-04 #inp {
+    width: unset;
+  }
+}
