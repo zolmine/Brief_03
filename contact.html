@@ -40,35 +40,35 @@
       <div class="transmission carb">
         <div class="form_00-00 cont1">
 
-          <input type="text" required placeholder="Full Name..." class="form-control">
+          <input type="text" id="fname" required placeholder="Full Name..." class="form-control">
         </div>
       </div>
       <div class="transmission carb">
         <div class="form_00-00 cont2">
 
-          <input placeholder="Email..." required type="email" class="form-control">
+          <input placeholder="Email..." id="fmail" required type="email" class="form-control">
         </div>
       </div>
       <div class="form_00-00 cont2">
-        <input type="text" required placeholder="Subject..." class="form-control">
+        <input type="text" id="fsub" required placeholder="Subject..." class="form-control">
       </div>
       <div class="form_00-00 cont2">
 
-        <textarea placeholder="Message..." required name="" id="" cols="30" rows="10" type=""
+        <textarea placeholder="Message..." id="fmessage" required name="" id="" cols="30" rows="10" type=""
           class="form-control"></textarea>
       </div>
 
       <div class="form_00-04">
-        <button onclick="import_data()">Submit</button>
+        <button  onclick="import_data()">Submit</button>
       </div>
   </section>
   <div id="modal" style="display: none">
     <div id="modal--content">
       <div id="close">&times;</div>
-     <h1>Full Name :</h1>  <input type="text" name="" id="name">
-     <h1>Email :</h1> <input type="text" name="" id="email">
-     <h1>Subject :</h1> <input type="text" name="" id="subject">
-     <h1>Message :</h1> <textarea name="" id="message" cols="30" rows="10"></textarea>
+     <h1>Full Name :</h1>  <p id="fullname"> hello</p>
+     <h1>Email :</h1>  <p id="email"></p>
+     <h1>Subject :</h1>  <p id="sub"></p>
+     <h1>Message :</h1>  <p id="message"></p>
     </div>
   </div>
 

@@ -201,6 +201,7 @@ section.reserve .inner-reserve .total h3 {
   section.reserve .inner-reserve .transmission {
     
       flex-direction: column;
+      
   }
   .transmission.carb {
     margin-bottom: 10px;
@@ -208,8 +209,13 @@ section.reserve .inner-reserve .total h3 {
   .form_00-04 input {
     
     margin-bottom: 10px;
+    display: block;
   }
   .form_00-04 #inp {
     width: unset;
+  }
+  .form-control{
+    margin: 2%;
+    width: 40%;
   }
 }
